@@ -1,8 +1,8 @@
 <?php
 
-namespace AmberCore\Generator\Command;
+namespace AmberCore\Generator\Command\GraphQL;
 
-use App\Helper\FileWorkTrait;
+use AmberCore\Helper\FileWorkTrait;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;

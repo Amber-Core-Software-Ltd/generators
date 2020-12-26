@@ -9,7 +9,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "AmberCore\\Generator\\": "src"
+      "AmberCore\\Generator\\": "src/"
     }
   },
   "require": {
