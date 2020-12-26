@@ -1,0 +1,22 @@
+{
+  "name": "amber-core/generators",
+  "license": "MIT",
+  "description": "Pack of Symfony Generators",
+  "keywords": [
+    "generator",
+    "AmberCore",
+    "Amber"
+  ],
+  "autoload": {
+    "psr-4": {
+      "AmberCore\\Generator\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=7.2",
+    "amber-core/helpers": "*",
+    "doctrine/orm": "^2.8",
+    "symfony/yaml": "5.2.*",
+    "symfony/console": "5.2.*"
+  }
+}
