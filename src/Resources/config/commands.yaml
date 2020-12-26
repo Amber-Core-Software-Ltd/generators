@@ -1,0 +1,8 @@
+services:
+  _defaults:
+    public: true
+
+  AmberCore\Generator\Command\GraphQL\TypesCommand:
+    autowire: true
+    tags:
+      - { name: console.command, command: amber-core:generator:graphql:types }

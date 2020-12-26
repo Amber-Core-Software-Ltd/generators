@@ -13,7 +13,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Yaml\Yaml;
 
-class TypesCommands extends Command
+class TypesCommand extends Command
 {
     use FileWorkTrait;
 
@@ -22,12 +22,11 @@ class TypesCommands extends Command
     /**
      * AmberCoreGeneratorGraphqlTypesCommand constructor.
      *
-     * @param string|null        $name
      * @param ContainerInterface $container
      */
-    public function __construct(string $name = null, private ContainerInterface $container)
+    public function __construct(private ContainerInterface $container)
     {
-        parent::__construct($name);
+        parent::__construct(static::$defaultName);
     }
 
     protected function configure()
